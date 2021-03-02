@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: rgb(0, 153, 255);
+    text-align: center;
+    
+}
+#greet {
+    margin-top: 20vh;
+    font-size: 50px;
+    font-weight: 400;
+}
+#hrw {
+    border: solid white 8.5px;
+    margin-top: 7vh;
+    margin-left: 45vw;
+    margin-right: 45vw;  
+}
+#time {
+    margin-top: 5vh;
+    font-size: 100px;
+    font-weight: 700;
+}
+#date {
+    margin-top: 5vh;
+    font-size: 35px;
+}
