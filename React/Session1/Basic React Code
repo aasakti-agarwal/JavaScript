@@ -1,0 +1,41 @@
+//html
+
+<div id="app"> </div>
+
+//css
+
+#app {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid red;
+  box-shadow: 6px 6px 1px green;
+  width: 200px;
+  padding: 20px;
+}
+
+//js
+
+function Person(props) {
+  //return what needs to be rendered to DOM
+  return (
+    //below code not html, but js so keyword class not used , classname used
+    <div className="person">
+      <h1>{props.name}</h1>
+      <p>{props.desc}</p>
+    </div>
+  );
+}
+//react lib needed to parse the above code
+//react dom to render js function as a component to DOM
+//lost css for inline-block, as it's wrapped in another element, so block by default
+
+var app = (
+  <div>
+     <person name="aasakti" desc="first" />
+     <person name="agarwal" desc="second" />
+  </div>
+);
+
+ //app variable used to avoid multiple rendering
+ReactDOM.render(app, document.querySelector('#app'));
+
